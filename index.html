@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JARVIS - Asistente IA Inteligente como Tony Stark">
+    <title>JARVIS - Asistente IA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="background-pattern"></div>
+    
+    <div class="container">
+        <div class="jarvis-brain">
+            <div class="brain-core"></div>
+            <div class="brain-ring"></div>
+            <div class="brain-ring-2"></div>
+            <div class="brain-pulse"></div>
+        </div>
+
+        <header class="app-header">
+            <div class="header-content">
+                <h1><span class="jarvis-text">J.A.R.V.I.S</span></h1>
+                <p class="subtitle">Just A Rather Very Intelligent System</p>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">En Línea</span>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <section class="chat-section">
+                <div id="chatMessages" class="chat-messages"></div>
+            </section>
+
+            <section class="input-section">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        class="user-input" 
+                        placeholder="Pregúntame algo..." 
+                        autocomplete="off"
+                    >
+                    <button id="voiceBtn" class="voice-btn" title="Entrada por voz">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button id="sendBtn" class="send-btn" title="Enviar">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-hints">
+                    <span class="hint-tag" data-hint="clima">¿Qué tiempo hace?</span>
+                    <span class="hint-tag" data-hint="noticias">Noticias hoy</span>
+                    <span class="hint-tag" data-hint="matematicas">Calcula algo</span>
+                    <span class="hint-tag" data-hint="investigacion">Investiga IA</span>
+                </div>
+            </section>
+
+            <section class="analysis-panel">
+                <div class="panel-item" id="performancePanel">
+                    <i class="fas fa-brain"></i>
+                    <span>Procesando...</span>
+                </div>
+                <div class="panel-item" id="confidencePanel">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Confianza: --</span>
+                </div>
+                <div class="panel-item" id="timePanel">
+                    <i class="fas fa-hourglass-end"></i>
+                    <span>Tiempo: --ms</span>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>🤖 Asistente IA - Basado en JARVIS de Iron Man</p>
+        </footer>
+    </div>
+
+    <script src="js/jarvis-brain.js"></script>
+    <script src="js/jarvis.js"></script>
+</body>
+</html>
